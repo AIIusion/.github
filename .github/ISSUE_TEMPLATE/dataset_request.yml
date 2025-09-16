@@ -1,0 +1,98 @@
+name: Dataset Request
+description: Request access to datasets or propose new dataset collection
+title: "[DATASET] "
+labels: ["dataset", "data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to request access to existing datasets or propose new dataset collection for dermatology AI research.
+
+  - type: dropdown
+    id: request-type
+    attributes:
+      label: Request Type
+      description: What type of dataset request is this?
+      options:
+        - Access to existing public dataset
+        - Access to private/institutional dataset
+        - New dataset collection proposal
+        - Dataset annotation/labeling request
+    validations:
+      required: true
+
+  - type: input
+    id: dataset-name
+    attributes:
+      label: Dataset Name
+      description: Name of the dataset (if requesting access) or proposed name (if new collection)
+      placeholder: "e.g., HAM10000, ISIC 2020, Custom Melanoma Dataset"
+    validations:
+      required: true
+
+  - type: textarea
+    id: dataset-description
+    attributes:
+      label: Dataset Description
+      description: Describe the dataset content, size, and characteristics
+      placeholder: "What type of images/data? How many samples? What conditions are covered?"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: disease-types
+    attributes:
+      label: Disease Types Covered
+      description: Select all applicable disease types
+      options:
+        - label: Melanoma
+        - label: Basal Cell Carcinoma
+        - label: Squamous Cell Carcinoma
+        - label: Actinic Keratosis
+        - label: Benign Keratosis
+        - label: Dermatofibroma
+        - label: Nevus/Mole
+        - label: Eczema/Dermatitis
+        - label: Psoriasis
+        - label: Fungal Infections
+        - label: Bacterial Infections
+        - label: Viral Infections
+        - label: Other
+
+  - type: checkboxes
+    id: image-types
+    attributes:
+      label: Image Types
+      description: Select all applicable image types
+      options:
+        - label: Clinical photographs
+        - label: Dermoscopy images
+        - label: Histopathology slides
+        - label: Confocal microscopy
+        - label: OCT images
+        - label: Ultrasound images
+
+  - type: textarea
+    id: intended-use
+    attributes:
+      label: Intended Use
+      description: How do you plan to use this dataset?
+      placeholder: "Training models, validation, benchmarking, etc."
+    validations:
+      required: true
+
+  - type: textarea
+    id: ethical-considerations
+    attributes:
+      label: Ethical Considerations
+      description: Address privacy, consent, and ethical aspects of dataset usage
+      placeholder: "How will you ensure patient privacy? Do you have IRB approval?"
+
+  - type: input
+    id: contact-info
+    attributes:
+      label: Contact Information
+      description: Your institutional email or contact method
+      placeholder: "researcher@university.edu"
+    validations:
+      required: true

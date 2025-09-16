@@ -1,0 +1,98 @@
+name: Research Proposal
+description: Submit a new research proposal for AI dermatology disease detection
+title: "[RESEARCH] "
+labels: ["research", "proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing to our AI dermatology research! Please fill out the following information about your research proposal.
+
+  - type: input
+    id: research-title
+    attributes:
+      label: Research Title
+      description: Provide a concise title for your research proposal
+      placeholder: "e.g., Novel CNN Architecture for Melanoma Detection"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: research-area
+    attributes:
+      label: Research Area
+      description: Select the primary focus area of your research
+      options:
+        - Melanoma Detection
+        - Skin Cancer Classification
+        - Inflammatory Conditions
+        - Infectious Diseases
+        - Benign Lesion Analysis
+        - Multi-modal Analysis
+        - Real-time Diagnosis
+        - Rare Disease Detection
+        - Treatment Response Monitoring
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: research-objective
+    attributes:
+      label: Research Objective
+      description: Describe the main objective and hypothesis of your research
+      placeholder: "What problem are you trying to solve? What is your hypothesis?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: methodology
+    attributes:
+      label: Methodology
+      description: Outline your proposed methodology and approach
+      placeholder: "What methods, models, or techniques will you use?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: datasets
+    attributes:
+      label: Dataset Requirements
+      description: Specify the datasets you plan to use or need access to
+      placeholder: "Which datasets will you use? Do you need help acquiring specific data?"
+
+  - type: textarea
+    id: expected-outcomes
+    attributes:
+      label: Expected Outcomes
+      description: What outcomes and deliverables do you expect from this research?
+      placeholder: "Models, papers, benchmarks, tools, etc."
+
+  - type: dropdown
+    id: timeline
+    attributes:
+      label: Expected Timeline
+      description: Estimated duration for this research project
+      options:
+        - 1-3 months
+        - 3-6 months
+        - 6-12 months
+        - 1+ years
+
+  - type: checkboxes
+    id: collaboration
+    attributes:
+      label: Collaboration
+      description: Check all that apply
+      options:
+        - label: I need clinical expertise/collaboration
+        - label: I can provide dermatology domain knowledge
+        - label: I need access to computational resources
+        - label: I can contribute computational resources
+        - label: I'm open to mentoring other researchers
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Any other relevant information about your research proposal
