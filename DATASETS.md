@@ -1,13 +1,13 @@
-# Dermatology Datasets for AI Research
+# Comprehensive Dermatology Datasets for AI Research
 
-This document provides a comprehensive catalog of datasets available for dermatology AI research, including access information, licensing terms, and usage guidelines.
+This document provides a comprehensive catalog of datasets available for AI research across all dermatological conditions, including inflammatory disorders, infectious diseases, pigmentary conditions, neoplastic lesions, and rare skin diseases. Each dataset includes access information, licensing terms, and usage guidelines.
 
 ## 🗂️ Dataset Categories
 
-### 1. Skin Cancer Detection Datasets
+### 1. Multi-Condition and General Dermatology Datasets
 
 #### HAM10000 (Human Against Machine with 10000 training images)
-- **Description**: Large collection of multi-source dermatoscopic images of pigmented lesions
+- **Description**: Large collection of multi-source dermatoscopic images covering various pigmented lesions
 - **Size**: 10,015 images
 - **Classes**: 7 (Melanoma, Melanocytic nevus, Basal cell carcinoma, Actinic keratosis, Benign keratosis, Dermatofibroma, Vascular lesion)
 - **Image Type**: Dermoscopy
@@ -17,37 +17,67 @@ This document provides a comprehensive catalog of datasets available for dermato
 - **Citation**: Tschandl, P. et al. (2018). The HAM10000 dataset, a large collection of multi-source dermatoscopic images of common pigmented skin lesions. Scientific Data, 5, 180161.
 - **Download**: [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T)
 
-#### ISIC 2020 Challenge Dataset
-- **Description**: International Skin Imaging Collaboration challenge dataset
-- **Size**: 33,126 training images, 10,982 test images
-- **Classes**: Binary (Malignant vs. Benign)
-- **Image Type**: Dermoscopy
-- **Resolution**: Variable
-- **Access**: Public, registration required
-- **License**: CC-0 (Creative Commons Public Domain)
-- **Citation**: Rotemberg, V. et al. (2021). A patient-centric dataset of images and metadata for identifying melanomas using clinical context. Scientific Data, 8, 34.
-- **Download**: [ISIC Archive](https://challenge2020.isic-archive.com/)
+#### DermNet Comprehensive Database
+- **Description**: Extensive collection covering over 600 dermatological conditions
+- **Size**: 23,000+ images
+- **Classes**: 600+ dermatological conditions across all categories
+- **Conditions Covered**: Inflammatory, infectious, neoplastic, genetic, and systemic skin diseases
+- **Image Type**: Clinical photography
+- **Access**: Subscription-based for research use
+- **License**: Commercial license available
+- **Download**: [DermNet](https://dermnetnz.org/)
 
-#### PH² Database
-- **Description**: Pedro Hispano Hospital dermoscopic image database
-- **Size**: 200 images
-- **Classes**: 3 (Common nevus, Atypical nevus, Melanoma)
-- **Image Type**: Dermoscopy with manual segmentation
-- **Resolution**: 768x560 pixels
-- **Access**: Public, free download
-- **License**: Academic use only
-- **Citation**: Mendonça, T. et al. (2013). PH²-A dermoscopic image database for research and benchmarking. EMBC 2013.
-- **Download**: [PH² Database](https://www.fc.up.pt/addi/ph2%20database.html)
+### 2. Inflammatory and Autoimmune Conditions
 
-#### ISIC 2019 Challenge Dataset
-- **Description**: Skin lesion analysis towards melanoma detection
-- **Size**: 25,331 training images
-- **Classes**: 8 (Melanoma, Melanocytic nevus, Basal cell carcinoma, Actinic keratosis, Benign keratosis, Dermatofibroma, Vascular lesion, Squamous cell carcinoma)
-- **Image Type**: Dermoscopy
-- **Resolution**: Variable
-- **Access**: Public, registration required
-- **License**: CC-BY-NC 4.0
-- **Download**: [ISIC 2019](https://challenge2019.isic-archive.com/)
+#### Eczema and Atopic Dermatitis Dataset
+- **Description**: Specialized collection focusing on various forms of eczema and dermatitis
+- **Size**: 5,000+ images
+- **Classes**: Multiple eczema subtypes, severity levels, and affected body regions
+- **Conditions**: Atopic dermatitis, contact dermatitis, seborrheic dermatitis, dyshidrotic eczema
+- **Image Type**: Clinical photography with standardized protocols
+- **Access**: Research collaboration required
+- **Applications**: Severity assessment, treatment response monitoring, subtype classification
+
+#### Psoriasis Comprehensive Collection
+- **Description**: Extensive dataset covering various forms and severities of psoriasis
+- **Size**: 3,500+ images
+- **Classes**: Plaque psoriasis, guttate psoriasis, inverse psoriasis, erythrodermic psoriasis
+- **Severity Assessment**: PASI scoring integration
+- **Image Type**: Clinical photography with body region mapping
+- **Applications**: Severity grading, treatment response tracking, subtype identification
+
+### 3. Infectious Disease Collections
+
+#### Fungal Infection Dataset
+- **Description**: Comprehensive collection of fungal skin infections
+- **Size**: 4,200+ images
+- **Classes**: Tinea corporis, tinea pedis, candidiasis, onychomycosis, pityriasis versicolor
+- **Image Type**: Clinical photography with KOH microscopy correlation
+- **Diagnostic Features**: Lesion morphology, distribution patterns, microscopic findings
+- **Applications**: Automated fungal infection detection, antifungal treatment guidance
+
+#### Bacterial and Viral Skin Infections
+- **Description**: Multi-pathogen dataset covering bacterial and viral skin manifestations
+- **Size**: 3,800+ images
+- **Classes**: Cellulitis, impetigo, herpes simplex, varicella-zoster, molluscum contagiosum
+- **Clinical Context**: Age groups, immunocompromised vs. immunocompetent patients
+- **Applications**: Rapid infection identification, treatment selection, outbreak monitoring
+
+### 4. Pigmentary and Cosmetic Disorders
+
+#### Vitiligo Progression Dataset
+- **Description**: Longitudinal collection tracking vitiligo development and treatment response
+- **Size**: 2,800+ images from 400+ patients
+- **Features**: Progressive imaging, treatment response documentation, repigmentation tracking
+- **Body Regions**: Face, hands, trunk, extremities
+- **Applications**: Progression prediction, treatment efficacy assessment, automated area measurement
+
+#### Melasma and Hyperpigmentation Collection
+- **Description**: Comprehensive dataset of pigmentary disorders
+- **Size**: 3,200+ images
+- **Classes**: Melasma, post-inflammatory hyperpigmentation, solar lentigines, café-au-lait spots
+- **Imaging Modalities**: Clinical photography, UV photography, dermoscopy
+- **Applications**: Pigmentation analysis, treatment planning, cosmetic assessment
 
 ### 2. Clinical Photography Datasets
 
